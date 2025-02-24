@@ -1,7 +1,5 @@
 # Continuous Integration and Continuous Deployment (CI/CD) Pipeline for a Web Application
 
-# You can access this website at http://137.184.23.94/
-
 # Project Overview
 ![A beautiful sunset](./Project-files/project-diagram.png)
 
@@ -26,24 +24,11 @@ The first step in setting up a CI/CD pipeline is to store your source code in a 
 
 If you haven't already, create a repository for your web application in a Git-based repository management platform, such as GitHub or GitLab. Make sure to push your latest code changes to the repository.
 
-```bash
-# fork this repository and clone it to your local machine
-git clone https://github.com/ankitraz/minor-project
-```
-
 ## Step 2: Setup Jenkins and Docker on DigitalOcean Droplet
 
 Next, you'll need to install and configure Jenkins on a build agent machine. Jenkins is an open-source automation server that can be used to automate various parts of the software development lifecycle, including building, testing, and deploying code.
 
 To install Jenkins, follow the instructions in the Jenkins documentation for your operating system. After Jenkins is installed, you'll need to configure it to access your source code repository. This can typically be done through the Jenkins web interface.
-
-* For provisioning servers, We will use Terraform module for digital ocean. Ensure that you have terraform installed on your local machine. You can download it from [here](https://www.terraform.io/downloads.html)
-
-```bash
-# clone the repository and follow the instructions in the README
-https://github.com/ankitraz/terraform-do
-```
-
 
 ## Step 3: Create a Jenkins Job
 
